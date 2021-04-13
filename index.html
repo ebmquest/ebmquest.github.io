@@ -9,7 +9,14 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play EBMQuest.</tw-noscript></noscript></tw-story>
-<tw-storydata name="EBMQuest" startnode="14" creator="Twine" creator-version="2.3.13" ifid="24D62ED2-EFBE-48B2-8846-1B61DE8E9BD7" zoom="0.6" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+<tw-storydata name="EBMQuest" startnode="14" creator="Twine" creator-version="2.3.13" ifid="24D62ED2-EFBE-48B2-8846-1B61DE8E9BD7" zoom="0.6" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story select {
+  	background-color:black;
+  	color:white;
+  	border-style:solid;
+  	padding:2px
+}
+
+tw-sidebar {
 	display: none;
 }
 
@@ -54,7 +61,9 @@ tw-link:hover, .enchantment-link:hover {
 /* Header border */
 hr.custom {
   border-top: 1px solid grey;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="EBM" color="green"></tw-tag>,<tw-tag name="ebm" color="green"></tw-tag>,<tw-tag name="end" color="yellow"></tw-tag>,<tw-tag name="fatal" color="orange"></tw-tag>,<tw-tag name="header" color="red"></tw-tag>,<tw-tag name="no-header" color="purple"></tw-tag><tw-passagedata pid="1" name="LearningObjectives" tags="no-header" position="4856.666666666667,410" size="100,100">&lt;img src=&quot;media/title_medium.png&quot;&gt;
+}
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="EBM" color="green"></tw-tag>,<tw-tag name="ebm" color="green"></tw-tag>,<tw-tag name="end" color="yellow"></tw-tag>,<tw-tag name="fatal" color="orange"></tw-tag>,<tw-tag name="header" color="red"></tw-tag>,<tw-tag name="no-header" color="purple"></tw-tag><tw-passagedata pid="1" name="LearningObjectives" tags="no-header" position="4856,410" size="100,100">&lt;img src=&quot;media/title_medium.png&quot;&gt;
 
 &#39;&#39;Learning objectives:&#39;&#39;
 * Develop, and demonstrate, analytical skills for integrate research evidence into decision making in healthcare.
@@ -185,7 +194,7 @@ There is a card that says &#39;Get Well Soon&#39; at her bedside. Her breakfast 
 [[Order some investigations-&gt;1-ddx]]
 [[Chart medications--&gt;1-ddx]]
 
----</tw-passagedata><tw-passagedata pid="11" name="1-initialhistory" tags="" position="658.6666666666666,2099" size="100,100">You begin by asking Janet how she is going. 
+---</tw-passagedata><tw-passagedata pid="11" name="1-initialhistory" tags="" position="658,2099" size="100,100">You begin by asking Janet how she is going. 
 
 She looks awkwardly at you. Her work of breathing mildly increases as she leans forward and lets out a powerful, hacking series of wet coughs. Then she rests backwards. 
 
@@ -624,7 +633,7 @@ After clicking &#39;assign me&#39;, you see &#39;&#39;Dr. $playerfirstname $play
 ---
 [[Review Robert&#39;s file-&gt;2-caseoverview]]
 
----</tw-passagedata><tw-passagedata pid="37" name="1-Ix" tags="" position="985,3409.3333333333335" size="200,200">What investigations would you like to order now for Janet to support or refute your provisional diagnosis of &#39;&#39;$DDx1&#39;&#39;?
+---</tw-passagedata><tw-passagedata pid="37" name="1-Ix" tags="" position="985,3409" size="200,200">What investigations would you like to order now for Janet to support or refute your provisional diagnosis of &#39;&#39;$DDx1&#39;&#39;?
 
 Bedside:
 (checkbox: 2bind $1_Ix_ECG,&quot;ECG&quot;)
@@ -922,7 +931,7 @@ What would you like to do now?
 [[Alter your prescription-&gt;1-Rx-ABx2]] 
 [[Thank the pharmacist but continue with your order as written-&gt;1-stubborn]]]
 
----</tw-passagedata><tw-passagedata pid="58" name="1-postRx" tags="" position="976.6666666666666,5089" size="100,100">Over the next few days, Janet shows a steady improvement from her pneumonia on appropriate antimicrobial therapy. Her respiratory rate settles to within normal limits, and her oxygen saturation improves.
+---</tw-passagedata><tw-passagedata pid="58" name="1-postRx" tags="" position="976,5089" size="100,100">Over the next few days, Janet shows a steady improvement from her pneumonia on appropriate antimicrobial therapy. Her respiratory rate settles to within normal limits, and her oxygen saturation improves.
 
 You brief your registrar on Janet&#39;s progress after she returns from theatre later that afternoon. She is impressed by your diligence and agrees with your plan. //&#39;&#39;&quot;Nice work today, $playerfirstname,&quot;&#39;&#39;// she calls out walking away. You can&#39;t help but smile as you finish your jobs for the day.
 
@@ -973,7 +982,7 @@ This will take some time. You mournfully pour out your tea and begin walking ups
 ---
 [[Go to Janet&#39;s bedside-&gt;1-pt2-atbedside]]
 
----</tw-passagedata><tw-passagedata pid="64" name="1-pt2-atbedside" tags="" position="4878,1836.6666666666667" size="100,100">When you arrive on the ward, you can hear Janet from the end of the corridor. She is screaming and crying loudly.
+---</tw-passagedata><tw-passagedata pid="64" name="1-pt2-atbedside" tags="" position="4878,1836" size="100,100">When you arrive on the ward, you can hear Janet from the end of the corridor. She is screaming and crying loudly.
 
 A nearby nurse informs you that Janet has been &#39;increasingly confused&#39; today. //&quot;All the other patients are having trouble sleeping because of her outbursts,&quot;// the exasperated nurse proclaims. //&quot;Could you prescribe something to settle her for the night?&quot;//
 
@@ -1289,7 +1298,7 @@ With some pushback, you have been effective at rationalising her investigations,
 ---
 [[Continue-&gt;1a-winner]]
 
----</tw-passagedata><tw-passagedata pid="83" name="1-pt2-npi2" tags="" position="4579,3198.3333333333335" size="100,100">Having finished explaining your plan in an eloquent monologue, and taking a breath in, the &quot;ANUM&quot; finally responds and inform you that they are, in fact, the ward clerk. 
+---</tw-passagedata><tw-passagedata pid="83" name="1-pt2-npi2" tags="" position="4579,3198" size="100,100">Having finished explaining your plan in an eloquent monologue, and taking a breath in, the &quot;ANUM&quot; finally responds and inform you that they are, in fact, the ward clerk. 
 
 They&#39;ve been trying to tell you but you were so excited to think about delirium management that they couldn&#39;t get a word in! 
 
