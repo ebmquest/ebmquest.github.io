@@ -241,7 +241,7 @@ You pause and get ready to do some searching.
 ---
 (b4r:&quot;dashed&quot;)+(b4r-size:2)+(b4r-colour:(hsl:0,0.8039,0.5,0.5),(hsl:0,0.8039,0.5,0.5),(hsl:0,0.8039,0.5,0.55),(hsl:0,0.8039,0.5,0.55))
 [(if:$userentrycount is 1)[[[Start-&gt;Overview]]](else-if:$userentrycount is 0)[[[Start-&gt;PlayerInfo]]]]
-(text-colour:grey)+(text-style:&quot;italic&quot;,&quot;subscript&quot;)[Version 2.0 | Last updated: 6 April 2022.]
+(text-colour:grey)+(text-style:&quot;italic&quot;,&quot;subscript&quot;)[Version 2.01 | Last updated: 8 April 2022.]
 ---
 (text-style:&quot;subscript&quot;)+(text-colour:(hsl:0,0,0.5333,0.65))[I love bugs and glitches!🐞👾🔥 Email me for instant 💯 points - akvaran@unimelb.edu.au.]≠</tw-passagedata><tw-passagedata pid="15" name="About" tags="no-header" position="5354,659" size="100,100">&#39;&#39;About&#39;&#39;
 =|=
@@ -328,21 +328,20 @@ Janet
 Robert-&gt;2-welcome]]](else:)[&lt;img src=&quot;media/scenario2_card_locked.png&quot;&gt;
 Robert]
 |==|
-
 ---
 =|=
-(text-colour:red)[[[Finish-&gt;postsummary]]]
+(color:purple)[[[Title Screen-&gt;TitleScreen]]] 
 =|=
+(color:purple)[[[Overview-&gt;Overview]]]
 =|=
-(text-colour:grey)[(link: &quot;🔙 Restart&quot;)[(confirm: &quot;Are you sure?&quot;)[(reload:)]]]
+(color:purple)[[[About-&gt;About]]]
 |==|
 ---
 =|=
-[[Title Screen-&gt;TitleScreen]] 
+(if:$complete1a is true and $complete1b is true)[(text-colour:red)+(text-style:&quot;buoy&quot;)[[[Finish-&gt;postsummary]]]](else:)[(color:purple)[[[Finish-&gt;postsummary]]]]
 =|=
-[[Overview-&gt;Overview]]
 =|=
-[[About-&gt;About]]
+(text-colour:grey)[(link: &quot;🔙 Restart&quot;)[(confirm: &quot;Are you sure?&quot;)[(reload:)]]]
 |==|
 ---
 &lt;script id=&quot;qs-embed-624ecc7f85a4bd16b29d6c90&quot;&gt;(function(p){var s=window.document.createElement(&#39;script&#39;);s.src=p.a;s.setAttribute(&#39;data-form-id&#39;,p.b);s.setAttribute(&#39;data-url-params&#39;,p.c);s.setAttribute(&#39;data-runner-id&#39;,p.d);s.setAttribute(&#39;data-css&#39;,p.e);s.setAttribute(&#39;data-scale&#39;,true);window.document.head.appendChild(s);})({&quot;a&quot;:&quot;https://form.questionscout.com/qs-form-script.min.js&quot;,&quot;b&quot;:&quot;624e9bcbd0c48bc76093edc0&quot;,&quot;c&quot;:&quot;[]&quot;,&quot;d&quot;:&quot;qs-embed-624ecc7f85a4bd16b29d6c90&quot;,&quot;e&quot;:&quot;&quot;})&lt;/script&gt;</tw-passagedata><tw-passagedata pid="17" name="2-welcome" tags="" position="8120,1558" size="100,100">(b4r:&quot;dotted&quot;)+(b4r-size:2)+(b4r-colour:navy)+(text-style:&quot;bold&quot;,&quot;expand&quot;)[Scenario 2: Robert]
@@ -398,9 +397,11 @@ What do you want to do next?
 [[Acute exacerbation of heart failure (HFpEF)-&gt;1-HFpEF]]
 [[Normal post-operative course; nil acute issues-&gt;1-noproblems]]
 
----</tw-passagedata><tw-passagedata pid="21" name="Overview" tags="no-header" position="5152,366" size="100,100">&#39;&#39;Overview&#39;&#39;
+---</tw-passagedata><tw-passagedata pid="21" name="Overview" tags="no-header" position="5152,365" size="100,100">&#39;&#39;Overview&#39;&#39;
 &lt;img src=&quot;media/stethbook.jpeg&quot;&gt;
 (if:visits &gt;= 1)[(set: $userentrycount to 1)]
+(if:$playerfirstname is &quot;Easter&quot; and $playerlastname is &quot;Egg&quot;)
+[(set:$complete1a to true)(set:$complete1b to true)]
 ---
 [[Learning Objectives-&gt;LearningObjectives]]
 [[About-&gt;About]]
@@ -423,7 +424,7 @@ Feel free to explore different avenues and decisions in each scenario. Some will
 
 &lt;img src=&quot;media/quicklinks.png&quot;&gt;
 
-We would love any feedback, including technical issues or comments on the module contents. Please send your feedback to: &lt;a href=&quot;mailto:akvaran@unimelb.edu.au?subject=EBMQuest Feedback: &amp;&quot;&gt;akvaran@unimelb.edu.au&lt;/a&gt;
+(color:red)[&#39;&#39;PLEASE&#39;&#39;] complete the embedded feedback form so we can continue to explore new formats for medical education. 🙏🙏🙏
 
 Go forth! 
 
@@ -1632,10 +1633,9 @@ EBM pearls from this scenario:
 (color:red)[&#39;&#39;Is this correct?&#39;&#39;]
 [[Yes, continue-&gt;Overview]]
 [[No, restart-&gt;TitleScreen]] 
----</tw-passagedata><tw-passagedata pid="108" name="Godmode" tags="" position="4743,70" size="100,100">&#39;&#39;GODMODE ACTIVATED&#39;&#39;
+---</tw-passagedata><tw-passagedata pid="108" name="EasterEgg" tags="" position="4743,70" size="100,100">&#39;&#39;EasterEgg ACTIVATED&#39;&#39;
 
-(set:$complete1a to true)
-(set:$complete1b to true)
+
 
 ---
 [[Continue-&gt;ChooseScenario]]</tw-passagedata></tw-storydata>
