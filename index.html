@@ -63,7 +63,7 @@ hr.custom {
   border-top: 1px solid grey;
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="EBM" color="green"></tw-tag>,<tw-tag name="ebm" color="green"></tw-tag>,<tw-tag name="end" color="yellow"></tw-tag>,<tw-tag name="fatal" color="orange"></tw-tag>,<tw-tag name="header" color="red"></tw-tag>,<tw-tag name="no-header" color="purple"></tw-tag>,<tw-tag name="script" color="green"></tw-tag><tw-passagedata pid="1" name="LearningObjectives" tags="no-header" position="4841,289" size="100,100">&lt;img src=&quot;media/title_medium.png&quot;&gt;
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="EBM" color="green"></tw-tag>,<tw-tag name="ebm" color="green"></tw-tag>,<tw-tag name="end" color="yellow"></tw-tag>,<tw-tag name="fatal" color="orange"></tw-tag>,<tw-tag name="header" color="red"></tw-tag>,<tw-tag name="no-header" color="purple"></tw-tag>,<tw-tag name="script" color="green"></tw-tag><tw-passagedata pid="1" name="LearningObjectives" tags="no-header" position="5297,302" size="100,100">&lt;img src=&quot;media/title_medium.png&quot;&gt;
 
 &#39;&#39;Learning objectives:&#39;&#39;
 * Develop, and demonstrate, analytical skills for integrate research evidence into decision making in healthcare.
@@ -71,8 +71,7 @@ hr.custom {
 * Describe approaches to engaging patients in the decision-making process, using shared decision making, including explaining the evidence and integrating their preferences.
 
 ---
-[[Continue-&gt;Overview]]
-(set: $playerfirstname to (prompt: &quot;enter your first (given) name&quot;, &quot;John&quot;))(set: $playerlastname to (prompt: &quot;enter your last name&quot;, &quot;Smith&quot;))(set: $playerfavcolour to (prompt: &quot;enter your favourite colour&quot;, &quot;torquoise&quot;))(set: $playerfavdisease to (prompt: &quot;enter your favourite disease&quot;, &quot;acanthocheilonemiasis&quot;))
+(link-undo:&quot;Go Back&quot;)
 
 ---</tw-passagedata><tw-passagedata pid="2" name="1-welcome" tags="" position="1274,1147" size="100,100">(b4r:&quot;dotted&quot;)+(b4r-size:2)+(b4r-colour:navy)+(text-style:&quot;bold&quot;,&quot;expand&quot;)[Scenario 1: Janet]
 
@@ -236,15 +235,14 @@ You pause and get ready to do some searching.
 [[Perform a physical exam-&gt;1-physicalexam]] 
 [[Order some investigations-&gt;1-ddx]] 
 
----</tw-passagedata><tw-passagedata pid="14" name="TitleScreen" tags="no-header" position="5082,0" size="200,200">[[&lt;img src=&quot;media/titlefull.png&quot; alt=&quot;title screen&quot;&gt;-&gt;LearningObjectives]]
+---</tw-passagedata><tw-passagedata pid="14" name="TitleScreen" tags="no-header" position="5128,0" size="200,200">&lt;img src=&quot;media/titlefull.png&quot; alt=&quot;title screen&quot;&gt;
 
 ---
-(b4r:&quot;dashed&quot;)+(b4r-size:2)+(b4r-colour:(hsl:0,0.8039,0.5,0.5),(hsl:0,0.8039,0.5,0.5),(hsl:0,0.8039,0.5,0.55),(hsl:0,0.8039,0.5,0.55))[[[= Start =-&gt;LearningObjectives]]]
-[[About-&gt;About]]
-(text-colour:grey)+(text-style:&quot;italic&quot;,&quot;subscript&quot;)[Version 2 | Last updated: 6 April 2022.]
-
+(b4r:&quot;dashed&quot;)+(b4r-size:2)+(b4r-colour:(hsl:0,0.8039,0.5,0.5),(hsl:0,0.8039,0.5,0.5),(hsl:0,0.8039,0.5,0.55),(hsl:0,0.8039,0.5,0.55))
+[(if:$userentrycount is 1)[[[Start-&gt;Overview]]](else-if:$userentrycount is 0)[[[Start-&gt;PlayerInfo]]]]
+(text-colour:grey)+(text-style:&quot;italic&quot;,&quot;subscript&quot;)[Version 2.0 | Last updated: 6 April 2022.]
 ---
-(text-style:&quot;subscript&quot;)+(text-colour:(hsl:0,0,0.5333,0.65))[I love bugs and glitches!🐞👾🔥 Email me for instant 💯 points - akvaran@unimelb.edu.au.]≠</tw-passagedata><tw-passagedata pid="15" name="About" tags="no-header" position="4849,153" size="100,100">&#39;&#39;About&#39;&#39;
+(text-style:&quot;subscript&quot;)+(text-colour:(hsl:0,0,0.5333,0.65))[I love bugs and glitches!🐞👾🔥 Email me for instant 💯 points - akvaran@unimelb.edu.au.]≠</tw-passagedata><tw-passagedata pid="15" name="About" tags="no-header" position="5474,298" size="100,100">&#39;&#39;About&#39;&#39;
 &lt;img src=&quot;media/title_small.png&quot;&gt; was developed by the Melbourne School of Population and Global Health (MSPGH), University of Melbourne, to enhance learning on evidence-based medicine in practice for soon-to-be junior doctors.
 
 =|=
@@ -291,7 +289,7 @@ University of Melbourne
 Senior Research Fellow | Melbourne School of Population &amp; Global Health
 University of Melbourne
 
-(text-style:&quot;bold&quot;,&quot;underline&quot;)[Beta testing:]
+(text-style:&quot;bold&quot;,&quot;underline&quot;)[Beta testing for Version 1 (2021):]
 =|=
 &lt;img src=&quot;media/kathyprofile.png&quot;&gt;
 =|=
@@ -299,7 +297,7 @@ University of Melbourne
 =|=
 |==|
 &#39;&#39;Kathy Zhang&#39;&#39;
-MD/MPH Student (MD4), Faculty of Medicine, Dentistry and Health Sciences
+Former MD/MPH Student (MD4 2021), Faculty of Medicine, Dentistry and Health Sciences
 University of Melbourne
 
 
@@ -312,10 +310,9 @@ Feedback/comments/issues to:
 
 
 ---
-[[Title Screen-&gt;TitleScreen]] 
-[[Learning Objectives-&gt;LearningObjectives]] 
+(link-undo:&quot;Go Back&quot;)
 
----</tw-passagedata><tw-passagedata pid="16" name="ChooseScenario" tags="no-header" position="4946,785" size="200,200">&#39;&#39;Choose your scenario&#39;&#39;
+---</tw-passagedata><tw-passagedata pid="16" name="ChooseScenario" tags="no-header" position="4946,615" size="200,200">&#39;&#39;Choose your scenario&#39;&#39;
 =|=
 [[&lt;img src=&quot;media/scenario1a_card.png&quot;&gt;
 Janet 
@@ -333,10 +330,11 @@ Robert]
 |==|
 
 ---
----
 (text-colour:red)[[[Finish-&gt;postsummary]]]
+---
 [[Title Screen-&gt;TitleScreen]] 
-[[Learning Objectives-&gt;LearningObjectives]]
+[[Overview-&gt;Overview]]
+---
 (text-colour:grey)[(link: &quot;🔙 Restart Game&quot;)[(confirm: &quot;Are you sure?&quot;)[(reload:)]]]</tw-passagedata><tw-passagedata pid="17" name="2-welcome" tags="" position="8120,1558" size="100,100">(b4r:&quot;dotted&quot;)+(b4r-size:2)+(b4r-colour:navy)+(text-style:&quot;bold&quot;,&quot;expand&quot;)[Scenario 2: Robert]
 &lt;img src=&quot;media/outsideED.jpeg&quot;&gt;
 You&#39;ve just started your rotation in Emergency Medicine at a rural hospital. 
@@ -390,25 +388,37 @@ What do you want to do next?
 [[Acute exacerbation of heart failure (HFpEF)-&gt;1-HFpEF]]
 [[Normal post-operative course; nil acute issues-&gt;1-noproblems]]
 
----</tw-passagedata><tw-passagedata pid="21" name="Overview" tags="no-header" position="4847,439" size="100,100">&#39;&#39;Overview&#39;&#39;
+---</tw-passagedata><tw-passagedata pid="21" name="Overview" tags="no-header" position="5152,366" size="100,100">&#39;&#39;Overview&#39;&#39;
+&lt;img src=&quot;media/stethbook.jpeg&quot;&gt;
+(if:visits &gt;= 1)[(set: $userentrycount to 1)]
+---
+[[Learning Objectives-&gt;LearningObjectives]]
+[[About-&gt;About]]
+---
 
-This is an interactive self-paced module written in a &#39;choose your own adventure&#39; style. It aims to help soon-to-be junior doctors explore the implementation of evidence-based medicine in their daily practice.
+(color:yellow)[&#39;&#39;Greetings $playerfirstname $playerlastname!&#39;&#39;] 
+&#39;&#39;EBMQuest!&#39;&#39; is an interactive self-paced module written in a &#39;choose your own adventure&#39; style. 
 
-The module is divided into two scenarios: Janet (a ward-based &quot;long case&quot; with two sections) and Robert (an ED-based &quot;short case&quot; scenario). After reviewing all scenarios, click on &#39;&#39;&#39;Finish&#39;&#39;&#39; to review post-module information. 
+It aims to help soon-to-be junior doctors explore the implementation of evidence-based medicine in their practice.
 
-(text-colour:yellow)[&#39;&#39;This is NOT a situational judgment test (SJT)&#39;&#39;]. We encourage you to attempt each scenario several times, exploring different avenues and decisions. Some will lead to dead ends, others to unexpected outcomes. It&#39;s about experimentation!
+The module is divided into two scenarios: 
+
+1. Janet (a ward-based &quot;long case&quot; in two chapters); 
+2. Robert (an ED-based &quot;short case&quot; scenario). 
+
+&#39;&#39;After reviewing all scenarios, click on //Finish// to review post-module information. &#39;&#39;
+
+(text-colour:yellow)[&#39;&#39;This is NOT a situational judgment test (SJT)&#39;&#39;]. 
+Feel free to explore different avenues and decisions in each scenario. Some will lead to dead ends, others to unexpected outcomes. There are no penalties.
 
 &lt;img src=&quot;media/quicklinks.png&quot;&gt;
 
-This module is accessible for computers or mobile device. We would love any feedback, including technical issues or comments on the module contents. Please send your feedback to: &lt;a href=&quot;mailto:akvaran@unimelb.edu.au?subject=EBMQuest Feedback: &amp;&quot;&gt;akvaran@unimelb.edu.au&lt;/a&gt;
-
-&lt;img src=&quot;media/stethbook.jpeg&quot;&gt;
+We would love any feedback, including technical issues or comments on the module contents. Please send your feedback to: &lt;a href=&quot;mailto:akvaran@unimelb.edu.au?subject=EBMQuest Feedback: &amp;&quot;&gt;akvaran@unimelb.edu.au&lt;/a&gt;
 
 Go forth! 
 
 ---
 [[Continue-&gt;ChooseScenario]] 
-
 ---</tw-passagedata><tw-passagedata pid="22" name="1-reassesslungs" tags="" position="831,2453" size="100,100">You call out for Matilda to give a hand. With Matilda&#39;s skilled assistance supporting Janet forward, you manage to have a better listen of Janet&#39;s chest and back. 
 
 You confirm scattered coarse crepitations bilaterally and reduced basal air entry. You also note some focal crepitations on the left side.
@@ -604,7 +614,7 @@ You decide to order some investigations to support or refute your provisional di
 ---
 [[Order some investigations-&gt;1-Ix]]
 
----</tw-passagedata><tw-passagedata pid="35" name="postsummary" tags="no-header" position="5668,249" size="200,200">&#39;&#39;Thanks for playing&#39;&#39;
+---</tw-passagedata><tw-passagedata pid="35" name="postsummary" tags="no-header" position="5681,308" size="200,200">&#39;&#39;Thanks for playing&#39;&#39;
 &lt;img src=&quot;media/title_medium.png&quot;&gt;
 
 Evidence-based medicine is difficult to integrate into routine clinical practice, especially for junior staff. We hope this module has given you some practical ideas to take forward in your clinical careers. 
@@ -1595,7 +1605,20 @@ EBM pearls from this scenario:
   gtag(&#39;js&#39;, new Date());
 
   gtag(&#39;config&#39;, &#39;G-1X2T9TS96S&#39;);
-&lt;/script&gt;</tw-passagedata></tw-storydata>
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="107" name="PlayerInfo" tags="no-header" position="4945,224" size="100,100">[(set: $playerfirstname to (prompt: &quot;enter your first (given) name&quot;, &quot;John&quot;))(set: $playerlastname to (prompt: &quot;enter your last name&quot;, &quot;Smith&quot;))(set: $playerfavcolour to (prompt: &quot;enter your favourite colour&quot;, &quot;torquoise&quot;))(set: $playerfavdisease to (prompt: &quot;enter your favourite disease&quot;, &quot;acanthocheilonemiasis&quot;))]
+
+&#39;&#39;Here are the details provided:&#39;&#39;
+//^^(NB. you do NOT have to use your real name; data entered are only stored locally on your device for story interactivity)^^//
+
+&#39;&#39;First name:&#39;&#39; [$playerfirstname]
+&#39;&#39;Last name:&#39;&#39; [$playerlastname]
+&#39;&#39;Favourite colour:&#39;&#39; [$playerfavcolour]
+&#39;&#39;Favourite disease:&#39;&#39; [$playerfavdisease]
+
+(color:red)[&#39;&#39;Is this correct?&#39;&#39;]
+[[Yes, continue-&gt;Overview]]
+[[No, restart-&gt;TitleScreen]] 
+---</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
