@@ -128,7 +128,7 @@ You don appropriate PPE, enter Janet&#39;s area, close the door, and sanitise yo
 &lt;a href=&quot;https://scholar.google.com.au/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;media/logo_googlescholar.png&quot;&gt;&lt;/a&gt;
 |==|
 =|=
-&lt;a href=&quot;https://go.openathens.net/redirector/unimelb.edu.au?url=http%3A%2F%2Fovidsp.ovid.com%2Fovidweb.cgi%3FT%3DJS%26NEWS%3Dn%26CSC%3DY%26PAGE%3Dmain%26D%3Dppez&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;media/logo_ovidmedline.png&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;https://go.openathens.net/redirector/unimelb.edu.au?url=http%3A%2F%2Fovidsp.ovid.com%2Fovidweb.cgi%3FT%3DJS%26NEWS%3Dn%26CSC%3DY%26PAGE%3Dmain%26D%3Dppez&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;media/logo_ovid.png&quot;&gt;&lt;/a&gt;
 =|=
 &lt;a href=&quot;https://go.openathens.net/redirector/unimelb.edu.au?url=https%3A%2F%2Fwww.clinicalkey.com.au%2F&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;media/logo_clinicalkey.png&quot;&gt;&lt;/a&gt;
 |==|
@@ -153,14 +153,15 @@ She is keen for you to review Janet as soon as possible.
 
 ---</tw-passagedata><tw-passagedata pid="7" name="1-readpage" tags="" position="1275,1321" size="100,100">(b4r:&quot;solid&quot;,&quot;none&quot;)+(b4r-colour:white)[(text-colour:green)+(background:black)[KILMORE 9374812 WARD 3 BED 12 INCREASED RR AND COUGH. PLEASE REVIEW. ASHLEIGH X97418.]]
 
-It was a fast ward round and you don&#39;t recognise the name. You cross-check with your list.
+It was a fast ward round and you don&#39;t recognise the name. You cross-check with your handover list.
 
 ---
 [[Check your list-&gt;1-caseoverview]]
 
 ---</tw-passagedata><tw-passagedata pid="8" name="1-caseoverview" tags="" position="1231,1493" size="200,200">&lt;img src=&quot;media/scenario1_full.jpg&quot;&gt;
-&#39;&#39;Janet Kilmore&#39;&#39; is a 93yoF from RACF. PHx HTN, HFpEF, COPD, Alzheimers dementia. P/w witnessed fall, Nil headstrike. Sustained R #NOF -&gt; D3 post R hip hemiarthroplasty.
+//[&#39;&#39;Janet Kilmore&#39;&#39; | UR 947834 | 93yoF. Witnessed fall nil headstrike -&gt; R #NOF -&gt; D3 post R hip hemiarthroplasty. PHx HTN, HFpEF, COPD, Alzheimers dementia.]//
 
+---
 You&#39;ve got lots of other jobs on your list. There are several patients pending discharge, and the ANUM is keen to free beds as ED is currently bedblocked. You also need to get notes faxed from another hospital, and speak with PACS (image transfer) about getting MRI images uploaded onto your system. Your registrars and consultants are currently in theatre. 
 
 &#39;&#39;What do you do next?&#39;&#39;
@@ -242,9 +243,7 @@ You pause and get ready to do some searching.
 [(if:$userentrycount is 1)[[[Start-&gt;Overview]]](else-if:$userentrycount is 0)[[[Start-&gt;PlayerInfo]]]]
 (text-colour:grey)+(text-style:&quot;italic&quot;,&quot;subscript&quot;)[Version 2.0 | Last updated: 6 April 2022.]
 ---
-(text-style:&quot;subscript&quot;)+(text-colour:(hsl:0,0,0.5333,0.65))[I love bugs and glitches!🐞👾🔥 Email me for instant 💯 points - akvaran@unimelb.edu.au.]≠</tw-passagedata><tw-passagedata pid="15" name="About" tags="no-header" position="5474,298" size="100,100">&#39;&#39;About&#39;&#39;
-&lt;img src=&quot;media/title_small.png&quot;&gt; was developed by the Melbourne School of Population and Global Health (MSPGH), University of Melbourne, to enhance learning on evidence-based medicine in practice for soon-to-be junior doctors.
-
+(text-style:&quot;subscript&quot;)+(text-colour:(hsl:0,0,0.5333,0.65))[I love bugs and glitches!🐞👾🔥 Email me for instant 💯 points - akvaran@unimelb.edu.au.]≠</tw-passagedata><tw-passagedata pid="15" name="About" tags="no-header" position="5354,659" size="100,100">&#39;&#39;About&#39;&#39;
 =|=
 
 =|=
@@ -252,6 +251,7 @@ You pause and get ready to do some searching.
 =|=
 
 |==|
+&lt;img src=&quot;media/title_small.png&quot;&gt; was developed in 2021 by the Melbourne School of Population and Global Health (MSPGH), University of Melbourne, to enhance learning on evidence-based medicine in practice for soon-to-be junior doctors. It was revised in 2022 with plans for interdisciplinary expansion.
 
 (text-style:&quot;bold&quot;,&quot;underline&quot;)[Lead Developer:]
 =|=
@@ -262,8 +262,8 @@ You pause and get ready to do some searching.
 
 |==|
 &#39;&#39;Dr. Aiden Varan, MD(Distinct), MPH, BSc(Hons)&#39;&#39;
-Paediatric Resident | Royal Children&#39;s Hospital Melbourne
-University of Melbourne MD Graduate | Class of 2019
+Paediatric Resident, Victorian Basic Paediatric Training Consortium
+University of Melbourne MD Graduate (Class of 2019)
 
 (text-style:&quot;bold&quot;,&quot;underline&quot;)[Project Supervision:]
 =|=
@@ -273,7 +273,7 @@ University of Melbourne MD Graduate | Class of 2019
 =|=
 
 |==|
-&#39;&#39;A/Prof. Rosemary McKenzie, PhD, MPH, BA, PG Dip Hlth Prom&#39;&#39;
+&#39;&#39;Prof. Rosemary McKenzie, PhD, MPH, BA, PG Dip Hlth Prom&#39;&#39;
 Director of Teaching and Learning | Melbourne School of Population &amp; Global Health 
 Deputy Director | Centre for Health Policy 
 University of Melbourne
@@ -330,12 +330,22 @@ Robert]
 |==|
 
 ---
+=|=
 (text-colour:red)[[[Finish-&gt;postsummary]]]
+=|=
+=|=
+(text-colour:grey)[(link: &quot;🔙 Restart&quot;)[(confirm: &quot;Are you sure?&quot;)[(reload:)]]]
+|==|
 ---
+=|=
 [[Title Screen-&gt;TitleScreen]] 
+=|=
 [[Overview-&gt;Overview]]
+=|=
+[[About-&gt;About]]
+|==|
 ---
-(text-colour:grey)[(link: &quot;🔙 Restart Game&quot;)[(confirm: &quot;Are you sure?&quot;)[(reload:)]]]</tw-passagedata><tw-passagedata pid="17" name="2-welcome" tags="" position="8120,1558" size="100,100">(b4r:&quot;dotted&quot;)+(b4r-size:2)+(b4r-colour:navy)+(text-style:&quot;bold&quot;,&quot;expand&quot;)[Scenario 2: Robert]
+&lt;script id=&quot;qs-embed-624ecc7f85a4bd16b29d6c90&quot;&gt;(function(p){var s=window.document.createElement(&#39;script&#39;);s.src=p.a;s.setAttribute(&#39;data-form-id&#39;,p.b);s.setAttribute(&#39;data-url-params&#39;,p.c);s.setAttribute(&#39;data-runner-id&#39;,p.d);s.setAttribute(&#39;data-css&#39;,p.e);s.setAttribute(&#39;data-scale&#39;,true);window.document.head.appendChild(s);})({&quot;a&quot;:&quot;https://form.questionscout.com/qs-form-script.min.js&quot;,&quot;b&quot;:&quot;624e9bcbd0c48bc76093edc0&quot;,&quot;c&quot;:&quot;[]&quot;,&quot;d&quot;:&quot;qs-embed-624ecc7f85a4bd16b29d6c90&quot;,&quot;e&quot;:&quot;&quot;})&lt;/script&gt;</tw-passagedata><tw-passagedata pid="17" name="2-welcome" tags="" position="8120,1558" size="100,100">(b4r:&quot;dotted&quot;)+(b4r-size:2)+(b4r-colour:navy)+(text-style:&quot;bold&quot;,&quot;expand&quot;)[Scenario 2: Robert]
 &lt;img src=&quot;media/outsideED.jpeg&quot;&gt;
 You&#39;ve just started your rotation in Emergency Medicine at a rural hospital. 
 
@@ -396,7 +406,7 @@ What do you want to do next?
 [[About-&gt;About]]
 ---
 
-(color:yellow)[&#39;&#39;Greetings $playerfirstname $playerlastname!&#39;&#39;] 
+(text-style:&quot;buoy&quot;)+(text-colour:red)[&#39;&#39;Greetings $playerfirstname $playerlastname!&#39;&#39;] 
 &#39;&#39;EBMQuest!&#39;&#39; is an interactive self-paced module written in a &#39;choose your own adventure&#39; style. 
 
 It aims to help soon-to-be junior doctors explore the implementation of evidence-based medicine in their practice.
@@ -619,7 +629,9 @@ You decide to order some investigations to support or refute your provisional di
 
 Evidence-based medicine is difficult to integrate into routine clinical practice, especially for junior staff. We hope this module has given you some practical ideas to take forward in your clinical careers. 
 
-We look forward to meeting you for the in-person session on (text-colour:red)+(text-style:&quot;bold&quot;)[16th April 2021]. 
+We look forward to meeting you for the interactive session on (text-colour:red)+(text-style:&quot;bold&quot;)[14th April 2022]. 
+
+Learn more about EBMQuest [[here-&gt;About]].
 
 Any questions or feedback can be directed to: 
 &lt;a href=&quot;mailto:akvaran@unimelb.edu.au?subject=EBMQuest Feedback: &amp;&quot;&gt;akvaran@unimelb.edu.au&lt;/a&gt;
@@ -627,10 +639,12 @@ Any questions or feedback can be directed to:
 Please submit feedback using the form below - it really helps us!
 
 Thanks :) 
-EBMQuest Team
+Aiden, on behalf of the EBMQuest Team
 
 ---
-[[Title Page-&gt;TitleScreen]] </tw-passagedata><tw-passagedata pid="36" name="2-triageboard" tags="" position="8118,1725" size="100,100">&lt;img src=media/insideED.jpeg&gt;
+[[Title Page-&gt;TitleScreen]] 
+---
+&lt;script id=&quot;qs-embed-624ecc7f85a4bd16b29d6c90&quot;&gt;(function(p){var s=window.document.createElement(&#39;script&#39;);s.src=p.a;s.setAttribute(&#39;data-form-id&#39;,p.b);s.setAttribute(&#39;data-url-params&#39;,p.c);s.setAttribute(&#39;data-runner-id&#39;,p.d);s.setAttribute(&#39;data-css&#39;,p.e);s.setAttribute(&#39;data-scale&#39;,true);window.document.head.appendChild(s);})({&quot;a&quot;:&quot;https://form.questionscout.com/qs-form-script.min.js&quot;,&quot;b&quot;:&quot;624e9bcbd0c48bc76093edc0&quot;,&quot;c&quot;:&quot;[]&quot;,&quot;d&quot;:&quot;qs-embed-624ecc7f85a4bd16b29d6c90&quot;,&quot;e&quot;:&quot;&quot;})&lt;/script&gt;</tw-passagedata><tw-passagedata pid="36" name="2-triageboard" tags="" position="8118,1725" size="100,100">&lt;img src=media/insideED.jpeg&gt;
 There are several patients currently waiting to be seen. 
 
 Your consultant advised you to initially focus on &lt;a href=&quot;https://acem.org.au/Content-Sources/Advancing-Emergency-Medicine/Better-Outcomes-for-Patients/Triage&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; ATS Cat 3-4 &lt;/a&gt; patients. 
@@ -1026,7 +1040,7 @@ What would you like to prescribe?
 
 ---
 [[Continue-&gt;1-pt2-sedatives2]] 
-
+(link-undo:&quot;On second thought...&quot;)
 ---</tw-passagedata><tw-passagedata pid="67" name="1-pt2-ix" tags="" position="4898,2640" size="100,100">You decide to order some basic investigations for Janet. 
 What would you like to order?
 
@@ -1307,7 +1321,7 @@ With some pushback, you have been effective at rationalising her investigations,
 ---
 [[Continue-&gt;1a-winner]]
 
----</tw-passagedata><tw-passagedata pid="83" name="1-pt2-npi2" tags="" position="4579,3198" size="100,100">Having finished explaining your plan in an eloquent monologue, and taking a breath in, the &quot;ANUM&quot; finally responds and inform you that they are, in fact, the ward clerk. 
+---</tw-passagedata><tw-passagedata pid="83" name="1-pt2-npi2" tags="" position="4579,3198" size="100,100">Having finished explaining your plan in an eloquent monologue, and taking a breath in, the &quot;ANUM&quot; finally responds and inform you that they are, in fact, the &#39;&#39;ward clerk&#39;&#39;. 
 
 They&#39;ve been trying to tell you but you were so excited to think about delirium management that they couldn&#39;t get a word in! 
 
@@ -1431,11 +1445,11 @@ He remembers feeling nauseated just before losing consciousness. His heart was r
 He had been out at a friend&#39;s house the night before, where they had drunk &quot;a few too many&quot;. He felt &quot;pretty hungover&quot; but decided to come to work anyway. He has otherwise been well recently, including nil symptoms of concern for COVID-19.
 
 //&#39;&#39;During/&#39;&#39;//
-He doesn&#39;t remember much apart from what colleagues and the paramedics told him afterwards. They said he was &quot;shaking occasionally&quot; but says they didn&#39;t describe it being very dramatic. They didn&#39;t mention any moaning sounds when he first collapsed.
+He doesn&#39;t remember much apart from what colleagues and the paramedics told him. They said he went down and was &quot;shaking occasionally&quot;. He wasn&#39;t drooling and they didn&#39;t mention any moaning sounds when he first collapsed.
 
 //&#39;&#39;After/&#39;&#39;//
 They said he &quot;came to&quot; pretty quickly and immediately recalled collapsing at work. The first thing he noticed was that his head and arm were really sore. He thought he had died, but he apparently hadn&#39;t. 
-His tongue, however, wasn&#39;t sore. His colleague called for an ambulance who came quickly. They gave him some water and panadol. He has not had any vomiting.
+His tongue wasn&#39;t sore. His colleague called for an ambulance who came quickly. They gave him some water and panadol. He has not had any vomiting.
 
 &#39;&#39;PMHx:&#39;&#39;
 Robert reports that sometimes he can feel a bit faint when he&#39;s been standing for a long time. He hasn&#39;t had any collapses like this before. 
@@ -1618,7 +1632,13 @@ EBM pearls from this scenario:
 (color:red)[&#39;&#39;Is this correct?&#39;&#39;]
 [[Yes, continue-&gt;Overview]]
 [[No, restart-&gt;TitleScreen]] 
----</tw-passagedata></tw-storydata>
+---</tw-passagedata><tw-passagedata pid="108" name="Godmode" tags="" position="4743,70" size="100,100">&#39;&#39;GODMODE ACTIVATED&#39;&#39;
+
+(set:$complete1a to true)
+(set:$complete1b to true)
+
+---
+[[Continue-&gt;ChooseScenario]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
