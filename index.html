@@ -237,7 +237,6 @@ You pause and get ready to do some searching.
 [[Order some investigations-&gt;1-ddx]] 
 
 ---</tw-passagedata><tw-passagedata pid="14" name="TitleScreen" tags="no-header" position="5128,0" size="200,200">&lt;img src=&quot;media/titlefull.png&quot; alt=&quot;title screen&quot;&gt;
-
 ---
 (b4r:&quot;dashed&quot;)+(b4r-size:2)+(b4r-colour:(hsl:0,0.8039,0.5,0.5),(hsl:0,0.8039,0.5,0.5),(hsl:0,0.8039,0.5,0.55),(hsl:0,0.8039,0.5,0.55))
 [(if:$userentrycount is 1)[[[Start-&gt;Overview]]](else-if:$userentrycount is 0)[[[Start-&gt;PlayerInfo]]]]
@@ -399,20 +398,16 @@ What do you want to do next?
 
 ---</tw-passagedata><tw-passagedata pid="21" name="Overview" tags="no-header" position="5152,365" size="100,100">&#39;&#39;Overview&#39;&#39;
 &lt;img src=&quot;media/stethbook.jpeg&quot;&gt;
-(if:visits &gt;= 1)[(set: $userentrycount to 1)]
-(if:$playerfirstname is &quot;Easter&quot; and $playerlastname is &quot;Egg&quot;)
-[(set:$complete1a to true)(set:$complete1b to true)]
 ---
 [[Learning Objectives-&gt;LearningObjectives]]
 [[About-&gt;About]]
 ---
-
-(text-style:&quot;buoy&quot;)+(text-colour:red)[&#39;&#39;Greetings $playerfirstname $playerlastname!&#39;&#39;] 
+(text-style:&quot;buoy&quot;)+(text-colour:red)[&#39;&#39;Greetings soon-to-be Dr. $playerfirstname $playerlastname!&#39;&#39;] 
 &#39;&#39;EBMQuest!&#39;&#39; is an interactive self-paced module written in a &#39;choose your own adventure&#39; style. 
 
 It aims to help soon-to-be junior doctors explore the implementation of evidence-based medicine in their practice.
 
-The module is divided into two scenarios: 
+&#39;&#39;The module is divided into two scenarios: &#39;&#39;
 
 1. Janet (a ward-based &quot;long case&quot; in two chapters); 
 2. Robert (an ED-based &quot;short case&quot; scenario). 
@@ -430,7 +425,8 @@ Go forth!
 
 ---
 [[Continue-&gt;ChooseScenario]] 
----</tw-passagedata><tw-passagedata pid="22" name="1-reassesslungs" tags="" position="831,2453" size="100,100">You call out for Matilda to give a hand. With Matilda&#39;s skilled assistance supporting Janet forward, you manage to have a better listen of Janet&#39;s chest and back. 
+---
+(if:visits &gt;= 1)[(set: $userentrycount to 1)](if:$playerfirstname is &quot;Easter&quot; and $playerlastname is &quot;Egg&quot;)[(set:$complete1a to true)(set:$complete1b to true)]</tw-passagedata><tw-passagedata pid="22" name="1-reassesslungs" tags="" position="831,2453" size="100,100">You call out for Matilda to give a hand. With Matilda&#39;s skilled assistance supporting Janet forward, you manage to have a better listen of Janet&#39;s chest and back. 
 
 You confirm scattered coarse crepitations bilaterally and reduced basal air entry. You also note some focal crepitations on the left side.
 
@@ -1631,8 +1627,9 @@ EBM pearls from this scenario:
 &#39;&#39;Favourite disease:&#39;&#39; [$playerfavdisease]
 
 (color:red)[&#39;&#39;Is this correct?&#39;&#39;]
-[[Yes, continue-&gt;Overview]]
-[[No, restart-&gt;TitleScreen]] 
+---
+[[&#39;&#39;Yes&#39;&#39;, continue-&gt;Overview]]
+[[&#39;&#39;No&#39;&#39;, restart-&gt;TitleScreen]] 
 ---</tw-passagedata><tw-passagedata pid="108" name="EasterEgg" tags="" position="4743,70" size="100,100">&#39;&#39;EasterEgg ACTIVATED&#39;&#39;
 
 
